@@ -25,12 +25,9 @@ class String
 
   def count_sentences
       out = self.split(/[.?!]/)
-      if out.include? || out.include?(/""\W)
-        out.delete([])
-        out.delete()
-        return out.count
-      else
-        out.count
-      end
-    end
+      out.each do |i| 
+  if i.length < 1
+    out.delete(i)
+  end 
+end 
 end
