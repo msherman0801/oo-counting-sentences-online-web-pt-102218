@@ -30,6 +30,6 @@ class String
           out.delete(i)
         end 
       end
-      out
+      out.count
   end 
 end
