@@ -24,13 +24,12 @@ class String
   end
 
   def count_sentences
-    out = self.split(/[.?!]/)
-    if out.include?([]) || out.include?("")
-      out.delete([])
-      out.delete("")
-      return out.count
-    else
+      out = self.split(/[.?!]/)
+      out.each do |i| 
+        if i.length < 1
+          out.delete(i)
+        end 
+      end
       out.count
-    end
-  end
+  end 
 end
