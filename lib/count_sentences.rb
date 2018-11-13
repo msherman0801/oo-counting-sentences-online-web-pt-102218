@@ -27,7 +27,7 @@ class String
     out = self.split(/[.?!]/)
     if out.include?([]) || out.include?("")
       out.delete([])
-      out.delete("")
+      out.delete()
       return out.count
     else
       out.count
