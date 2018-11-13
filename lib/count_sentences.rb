@@ -29,5 +29,6 @@ class String
         if i.length < 1
           out.delete(i)
         end 
-end 
+      end
+  end 
 end
